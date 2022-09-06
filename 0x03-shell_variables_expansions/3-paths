@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -links +2
+echo $((`tr -dc : <<<"$PATH" | wc -c`+1))
